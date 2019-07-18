@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 268.0, 78.0, 1352.0, 702.0 ],
+		"rect" : [ 375.0, 78.0, 434.0, 573.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -527,7 +527,7 @@
 					"format" : 6,
 					"id" : "obj-68",
 					"maxclass" : "flonum",
-					"maximum" : 10.0,
+					"maximum" : 1.0,
 					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -727,7 +727,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 614.0, 155.0, 1372.0, 808.0 ],
+						"rect" : [ 34.0, 155.0, 1372.0, 808.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -754,7 +754,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-46",
@@ -2194,6 +2193,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.600000023841858, 0.400000035762787, 0.199999943375587, 1.0 ],
 					"id" : "obj-1",
 					"idlemouse" : 1,
 					"maxclass" : "jit.pwindow",
@@ -2659,6 +2659,30 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "bordercolor",
+					"id" : "obj-25",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 632.0, 660.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "high_res",
+					"id" : "obj-26",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 210.074073999999996, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2776,6 +2800,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
