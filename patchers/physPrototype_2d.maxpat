@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 375.0, 78.0, 439.0, 583.0 ],
+		"rect" : [ 375.0, 78.0, 1020.0, 782.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -768,6 +768,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-46",
@@ -907,8 +908,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 53.0, 134.5, 662.0, 23.0 ],
-									"text" : "jit.phys.body @shape cube @scale 5 0.1 5 @position 0 5 0 @mass 0 @restitution 1 @name ceiling @collisions 0"
+									"patching_rect" : [ 53.0, 134.5, 803.0, 23.0 ],
+									"text" : "jit.phys.body @shape cube friction 0 @damping 0 0 @scale 5 0.1 5 @position 0 5 0 @mass 0 @restitution 1 @name ceiling @collisions 0"
 								}
 
 							}
@@ -921,8 +922,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 53.0, 197.0, 839.0, 23.0 ],
-									"text" : "jit.phys.body @shape cube @scale 0.1 5 5 @position 5 0 0 @mass 0 @restitution 1 @name wallRight @collisions 0"
+									"patching_rect" : [ 53.0, 197.0, 819.0, 23.0 ],
+									"text" : "jit.phys.body @shape cube friction 0 @damping 0 0 @scale 0.1 5 5 @position 5 0 0 @mass 0 @restitution 1 @name wallRight @collisions 0"
 								}
 
 							}
@@ -935,8 +936,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 53.0, 166.0, 674.0, 23.0 ],
-									"text" : "jit.phys.body @shape cube @scale 0.1 5 5 @position -5 0 0 @mass 0 @restitution 1 @name wallLeft @collisions 0"
+									"patching_rect" : [ 53.0, 166.0, 815.0, 23.0 ],
+									"text" : "jit.phys.body @shape cube friction 0 @damping 0 0 @scale 0.1 5 5 @position -5 0 0 @mass 0 @restitution 1 @name wallLeft @collisions 0"
 								}
 
 							}
@@ -949,8 +950,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 55.0, 100.0, 733.0, 23.0 ],
-									"text" : "jit.phys.body @shape cube @scale 5 0.1 5 @position 0 -5 0 @mass 0 @restitution 1 @name floor @collisions 1 @filters balls"
+									"patching_rect" : [ 55.0, 100.0, 888.0, 23.0 ],
+									"text" : "jit.phys.body @shape cube @friction 0 @damping 0 0 @scale 5 0.1 5 @position 0 -5 0 @mass 0 @restitution 1 @name floor @collisions 1 @filters balls"
 								}
 
 							}
@@ -972,7 +973,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 778.5, 129.0, 939.5, 129.0 ],
+									"midpoints" : [ 933.5, 129.0, 939.5, 129.0 ],
 									"source" : [ "obj-14", 1 ]
 								}
 
